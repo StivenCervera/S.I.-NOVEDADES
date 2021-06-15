@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+</head>
+<body>
+	<div class="container">				
+	</div>
+	
+	<div class="container">
+	
+		<table class="table">
+			<thead class="thead-dark">
+				<tr>
+					<th scope="col">Id</th>
+					<th scope="col">tipo rol</th>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="cl:${Rol}">
+					<th scope="row" th:text="${cl.id_Rol}"></th>
+					<td th:text="${cl.tipo_Rol}"></td>
+				
